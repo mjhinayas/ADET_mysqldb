@@ -23,6 +23,8 @@ app.use('/api/dept', departmentRoutes);
 app.use('/api/course', coursesRoutes);
 app.use('/api/student', studentsRoutes);
 
+
+
 const PORT = 5000;
 
 app.listen(PORT, () => {
