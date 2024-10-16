@@ -13,7 +13,13 @@ const pool = mysql.createPool({
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
-    port: process.env.DB_PORT
+    port: process.env.DB_PORT,
+
+    host: process.env.REMOTE_DB_HOST,
+    user: process.env.REMOTE_DB_USER,
+    password: process.env.REMOTE_DB_PASSWORD,
+    database: process.env.REMOTE_DB_NAME,
+    port: process.env.REMOTE_DB_PORT
 });
 
 module.exports = pool;
